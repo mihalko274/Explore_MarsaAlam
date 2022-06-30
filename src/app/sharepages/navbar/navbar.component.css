@@ -1,3 +1,5 @@
+/* BEGIN Mobile CSS */
+/* ---------------------------------------------------------- */
 @media screen and (max-width:599px) {
 
   .navbar {
@@ -45,10 +47,13 @@
     border-radius: 20px;
   }
   .navbar-toggler-icon {
-    background-image: url(/assets/list.svg);
+    background-image: url(/assets/svg_files/list.svg);
   }
 
 }
+/* ---------------------------------------------------------- */
+/* END Mobile CSS */
+
 
 @media screen and (min-width:600px) {
 }
