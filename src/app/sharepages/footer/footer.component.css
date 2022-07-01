@@ -25,14 +25,15 @@
     margin: 30px 0 0 10px;
     color: white;
     display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
   }
 
-  .footer-content h5 {
+  .column-header {
     font-weight: 700;
     margin: 0;
+    color:white;
+    font-size: 24px;
   }
 
   .footer-content a {
@@ -62,13 +63,92 @@
     padding: 50px 0 10px 0;
   }
 
+  .footer-column{
+    display: flex;
+  }
 }
 /* ---------------------------------------------------------- */
 /* END Mobile CSS */
 
 
+/* BEGIN Tablet CSS */
+/* ---------------------------------------------------------- */
 @media screen and (min-width:600px) {
-}
 
-@media screen and (min-width:1024px) {
+  .footer {
+    max-width: 100%;
+    background: black;
+    color: white;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .footer-brand {
+    margin: 30px 0 0 10px;
+  }
+  .footer-brand h2 {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  .footer-brand p {
+    font-size: 13px;
+  }
+
+  .footer-content {
+    margin: 30px 0 0 10px;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .column-header {
+    font-weight: 700;
+    margin: 0;
+    color:white;
+    font-size: 24px;
+  }
+
+  .footer-content a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .footercontentClick{
+    border:solid 0;
+    background: black;
+  }
+
+  .footer-arrow-icon{
+    background-image: url("/assets/svg_files/caret-down.svg");
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    filter: invert(92%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(108%) contrast(103%);
+  }
+
+  .footer-author-rights{
+    text-align: center;
+    padding: 50px 0 10px 0;
+  }
+
+  .footer-column{
+    display: flex;
+  }
+
 }
+/* ---------------------------------------------------------- */
+/* END Mobile CSS */
+
+
+
+/* BEGIN Desktop CSS */
+/* ---------------------------------------------------------- */
+@media screen and (min-width:992px) {
+}
+/* ---------------------------------------------------------- */
+/* END Mobile CSS */
