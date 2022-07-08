@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'Explore_MarsaAlam',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'marsa_alam';
+  title = 'Explore_MarsaAlam';
+  @HostListener('window:focus') onFocus() {
+    console.log('Focus, call  window.location.reload()');
+
+    // window.location.reload();
+  }
 }
