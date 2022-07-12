@@ -9,43 +9,38 @@
   }
 
   .navbar-brand {
-    margin: 30px 0px 0px 10px;
+    margin: 10px 0 0 5px;
     font-weight: 700;
-    height: 80px;
-    font-size: 40px;
-    line-height: 20px;
+    height: 50px;
+    font-size: 32px;
+    line-height: 16px;
   }
 
   .navbar-brand-additional {
-    font-size: 13px;
+    font-size: 12px;
   }
 
 
   .nav-link {
     padding: 20px;
-    margin: 3px 12px;
+    margin: 5px 0px;
     color: black;
+    background: #f1f1f1;
+    border-radius: 10px;
   }
   .active-link {
     padding: 20px;
-    margin: 3px 12px;
     color: white;
     background: black;
     border-radius:10px;
   }
 
-  .navbar-collapse {
-    padding: 10px 0px;
-    border-radius:20px;
-    background: #F1F1F1;
-  }
-
   .navbar-toggler {
-    font-size: 30px;
+    font-size: 24px;
     border: solid 0;
     background: #F1F1F1;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 5px;
+    border-radius: 10px;
   }
   .navbar-toggler-icon {
     background-image: url(/assets/svg_files/list.svg);
@@ -55,6 +50,9 @@
 /* ---------------------------------------------------------- */
 /* END Mobile CSS */
 
+
+/* BEGIN Tablet CSS */
+/* ---------------------------------------------------------- */
 
 @media screen and (min-width:600px) {
 
@@ -66,50 +64,63 @@
   }
 
   .navbar-brand {
-    margin: 30px 0px 0px 10px;
+    margin: 10px 0 0 5px;
     font-weight: 700;
-    height: 80px;
-    font-size: 40px;
-    line-height: 20px;
+    height: 50px;
+    font-size: 32px;
+    line-height: 16px;
   }
 
   .navbar-brand-additional {
-    font-size: 13px;
+    font-size: 12px;
   }
 
 
   .nav-link {
     padding: 20px;
-    margin: 3px 12px;
+    margin: 5px 0px;
     color: black;
+    background: #f1f1f1;
+    border-radius: 10px;
   }
   .active-link {
     padding: 20px;
-    margin: 3px 12px;
     color: white;
     background: black;
     border-radius:10px;
   }
 
-  .navbar-collapse {
-    padding: 10px 0px;
-    border-radius:20px;
-    background: #F1F1F1;
-  }
-
   .navbar-toggler {
-    font-size: 30px;
+    font-size: 24px;
     border: solid 0;
     background: #F1F1F1;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 5px;
+    border-radius: 10px;
   }
   .navbar-toggler-icon {
     background-image: url(/assets/svg_files/list.svg);
   }
 
+  li.nav-item {
+    width: 25%;
+    text-align: center;
+    margin: 0 5px;
+}
+  .navbar ul {
+        display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-evenly;
+  }
 
 }
+
+/* ---------------------------------------------------------- */
+/* END Tablet CSS */
+
+/* BEGIN Desktop CSS */
+/* ---------------------------------------------------------- */
 
 @media screen and (min-width:992px) {
 
@@ -123,13 +134,12 @@
   .navbar-nav {
     padding: 5px;
     border-radius: 20px;
-    background: #F1F1F1;
   }
 
   .navbar-brand {
-    margin: 30px 0px 0px 10px;
+    margin: 0px 0px 0px 10px;
     font-weight: 700;
-    height: 80px;
+    height: 50px;
     font-size: 40px;
     line-height: 20px;
   }
@@ -138,22 +148,29 @@
     font-size: 13px;
   }
 
+  li.nav-item {
+    width: unset;
+    text-align: unset;
+    margin: unset;
+}
 
   .nav-link {
+    width: 100px;
     padding: 20px;
-    margin: 3px 12px;
+    margin: 0px 5px 0px 0px;
     color: black;
+    text-align: center;
   }
   .active-link {
     padding: 20px;
-    margin: 3px 12px;
+    margin: 0px 5px 0px 0px;
     color: white;
     background: black;
     border-radius:10px;
   }
 
   .navbar-collapse {
-    padding: 10px 0px;
+    padding: 0px;
     border-radius:20px;
     background: unset;
   }
@@ -171,3 +188,6 @@
 
 
 }
+
+/* ---------------------------------------------------------- */
+/* END Desktop CSS */
