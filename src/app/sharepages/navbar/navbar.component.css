@@ -5,30 +5,14 @@
   .navbar {
     background: white;
     box-shadow: 0 0 6px 3px #0000001a;
-    /*border-radius: 0 0 10px 10px; */
-
-    /* update 11.7. */
-    border-radius: 0;
+    border-radius: 0 0 20px 20px;
   }
-
-  /* added 11.7. */
-  .navbar ul {
-    padding: 10px 0 10px 0;
-    background: #f1f1f1;
-    border-radius: 20px;
-  }
-
-  .ms-auto {
-    margin: 10px!important;
-  }
-  /* end 11.7. */
-
 
   .navbar-brand {
-    margin: 0px 0px 0px 10px;
+    margin: 30px 0px 0px 10px;
     font-weight: 700;
-    height: 50px;
-    font-size: 36px;
+    height: 80px;
+    font-size: 40px;
     line-height: 20px;
   }
 
@@ -51,31 +35,17 @@
   }
 
   .navbar-collapse {
-    /* old version */
-    /* padding: 10px 0px;
-      border-radius:20px;
-      background: #F1F1F1;*/
-
-    /* update 11.7. */
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
-    z-index: 999;
-    padding: 0;
-    border-radius: 0 0 10px 10px;
-    background: #fff;
-    flex-basis: unset!important;
-    flex-grow: unset!important;
-    align-items: unset!important;
+    padding: 10px 0px;
+    border-radius:20px;
+    background: #F1F1F1;
   }
 
   .navbar-toggler {
-    font-size: 24px;
+    font-size: 30px;
     border: solid 0;
     background: #F1F1F1;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 20px;
   }
   .navbar-toggler-icon {
     background-image: url(/assets/svg_files/list.svg);
@@ -92,30 +62,14 @@
   .navbar {
     background: white;
     box-shadow: 0 0 6px 3px #0000001a;
-    /*border-radius: 0 0 20px 20px; */
-
-    /* update 11.7. */
-    border-radius: 0;
+    border-radius: 0 0 20px 20px;
   }
-
-  /* added 11.7. */
-  .navbar ul {
-    padding: 10px 0 10px 0;
-    background: #f1f1f1;
-    border-radius: 20px;
-  }
-
-  .ms-auto {
-    margin: 10px!important;
-  }
-  /* end 11.7. */
-
 
   .navbar-brand {
-    margin: 0px 0px 0px 10px;
+    margin: 30px 0px 0px 10px;
     font-weight: 700;
-    height: 50px;
-    font-size: 36px;
+    height: 80px;
+    font-size: 40px;
     line-height: 20px;
   }
 
@@ -138,31 +92,17 @@
   }
 
   .navbar-collapse {
-    /* old version */
-     /*padding: 10px 0px;
+    padding: 10px 0px;
     border-radius:20px;
-    background: #F1F1F1;*/
-
-    /* update 11.7. */
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
-    z-index: 999;
-    padding: 0;
-    border-radius: 0 0 10px 10px;
-    background: #fff;
-    flex-basis: unset!important;
-    flex-grow: unset!important;
-    align-items: unset!important;
+    background: #F1F1F1;
   }
 
   .navbar-toggler {
-    font-size: 24px;
+    font-size: 30px;
     border: solid 0;
     background: #F1F1F1;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 20px;
   }
   .navbar-toggler-icon {
     background-image: url(/assets/svg_files/list.svg);
@@ -177,30 +117,20 @@
   .navbar {
     background: white;
     box-shadow: 0 0 6px 3px #0000001a;
-    /*border-radius: 0 0 20px 20px; */
-
-    /* update 11.7. */
-    border-radius: 0;
+    border-radius: 0 0 20px 20px;
   }
 
-  /* added 11.7. */
-  .navbar ul {
-    padding: 10px 0 10px 0;
-    background: #f1f1f1;
+  .navbar-nav {
+    padding: 5px;
     border-radius: 20px;
+    background: #F1F1F1;
   }
-
-  .ms-auto {
-    margin: 10px!important;
-  }
-  /* end 11.7. */
-
 
   .navbar-brand {
-    margin: 0px 0px 0px 10px;
+    margin: 30px 0px 0px 10px;
     font-weight: 700;
-    height: 50px;
-    font-size: 36px;
+    height: 80px;
+    font-size: 40px;
     line-height: 20px;
   }
 
@@ -223,31 +153,17 @@
   }
 
   .navbar-collapse {
-    /* old version */
-     /*padding: 10px 0px;
+    padding: 10px 0px;
     border-radius:20px;
-    background: #F1F1F1;*/
-
-    /* update 11.7. */
-    position: unset;
-    top: unset;
-    right: unset;
-    width: unset;
-    z-index: 999;
-    padding: unset;
-    border-radius: unset;
     background: unset;
-    flex-basis: unset!important;
-    flex-grow: unset!important;
-    align-items: unset!important;
   }
 
   .navbar-toggler {
-    font-size: 24px;
+    font-size: 30px;
     border: solid 0;
     background: #F1F1F1;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 20px;
   }
   .navbar-toggler-icon {
     background-image: url(/assets/svg_files/list.svg);
