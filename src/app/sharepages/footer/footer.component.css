@@ -58,11 +58,6 @@
     filter: invert(92%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(108%) contrast(103%);
   }
 
-  .footer-author-rights{
-    text-align: center;
-    padding: 50px 0 10px 0;
-  }
-
   .footer-column{
     display: flex;
   }
@@ -129,11 +124,6 @@
     background-position: center;
     background-size: 100%;
     filter: invert(92%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(108%) contrast(103%);
-  }
-
-  .footer-author-rights{
-    text-align: center;
-    padding: 50px 0 10px 0;
   }
 
   .footer-column{
