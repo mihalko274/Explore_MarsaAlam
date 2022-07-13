@@ -14,11 +14,12 @@
   }
   .footer-brand h2 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 32px;
+    line-height: 16px;
   }
 
   .footer-brand p {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .footer-content {
