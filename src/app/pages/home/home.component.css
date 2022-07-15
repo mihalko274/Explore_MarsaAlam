@@ -86,7 +86,7 @@ width: 100%;
 
 .homebanner-desc {
   width: fit-content;
-    max-width: 300px;
+    max-width: 80%;
     text-decoration: none;
     text-transform: uppercase;
     display: block;
@@ -100,6 +100,25 @@ width: 100%;
     overflow: hidden;
     color: white;
     left: 5%;
+}
+
+.homebanner-slide button{
+	font-size: 14px;
+	font-size: min(17px,4vw);
+	font-weight: bold;
+	text-transform: uppercase;
+	position: absolute;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.568);
+	padding: 10px ;
+	background-color:rgba(255, 255, 255, 0.295);
+	border-radius: 10px;
+	color: white;
+	min-width: 70%;
+	left: 15%;
+	bottom: 10%;
+	padding: 3% 0;
+	z-index: 20;
+	backdrop-filter: blur(4px);
 }
 
 #slider_header_holder{
@@ -126,21 +145,6 @@ width: 100%;
 	top: 0;
 	z-index: 10;
 }
-#slider_header_holder h10{
-	color: white;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 15px;
-	font-size: min(4.5vw,20px);
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.46);
-	padding: 10px ;
-	background-color:rgba(255, 255, 255, 0.295);
-	width: fit-content;
-	border-radius: 15px;
-	z-index: 20;
-
-
-}
 #slider_header_holder p{
 	color: white;
 	text-transform: uppercase;
@@ -148,12 +152,13 @@ width: 100%;
 	letter-spacing: 0.025em;
 	font-size: 25px;
 	font-size: min(8.7vw,40px);
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.46);
+	text-shadow: 0px 0px 10px black;
 	padding: 10px 0;
-	width: 50%;
+	width: 100%;
 	z-index: 20;
-
+  line-height: 40px;
 }
+
 #slider_header_holder button{
 	border: 0;
     font-size: 14px;
@@ -182,29 +187,6 @@ width: 100%;
 #main-static-slider a:nth-child(4){
 	grid-area: d;
 }
-
-
-
-.homebanner-slide button{
-	font-size: 14px;
-	font-size: min(17px,4vw);
-	font-weight: bold;
-	text-transform: uppercase;
-	position: absolute;
-	text-shadow: 0 0 5px rgba(0, 0, 0, 0.568);
-	padding: 10px ;
-	background-color:rgba(255, 255, 255, 0.295);
-	border-radius: 10px;
-	color: white;
-	min-width: 70%;
-	left: 15%;
-	bottom: 10%;
-	padding: 3% 0;
-	z-index: 20;
-	backdrop-filter: blur(4px);
-}
-
-
 }
 /* ---------------------------------------------------------- */
 /* END Mobile CSS */
@@ -213,6 +195,200 @@ width: 100%;
 /* BEGIN Tablet CSS */
 /* ---------------------------------------------------------- */
 @media screen and (min-width:600px) {
+
+  #main-static-slider{
+    width: 100%;
+    padding: 1%;
+    padding:10px max(10px,2vw);
+    display: grid;
+    justify-content: space-around;
+    grid-template-areas: 'a a'
+    'b c'
+    'b d';
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  #main-static-slider a{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  #big_homebanner-slide img, .homebanner-slide img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+  }
+
+  .homebanner-slide::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 40%, rgb(0 0 0 / 80%));
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+
+  #big_homebanner-slide{
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+
+  }
+
+  #big_homebanner-slide img{
+    height:100vw;
+    max-height: 400px;
+    object-fit: cover;
+    position: relative;
+    display: block;
+  }
+
+  #big_homebanner-lowres img{
+    height: 100%;
+    max-height: 700px;
+    object-fit: cover;
+    position: relative;
+    display: block;
+  }
+
+  .homebanner-slide img {
+    height:40vw;
+    max-height: 200px;
+    object-fit: cover;
+    position: relative;
+    display: block;
+
+
+  }
+  .homebanner-name {
+    text-shadow: 3px 2px 4px black;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      position: absolute;
+      z-index: 10;
+      bottom: 10%;
+      font-weight: 700;
+      font-size: 24px;
+      color: white;
+      left: 5%;
+
+  }
+
+  .homebanner-desc {
+    width: fit-content;
+      max-width: 80%;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      position: absolute;
+      z-index: 10;
+      bottom: 0;
+      font-style: italic;
+      font-size: 14px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      color: white;
+      left: 5%;
+  }
+
+  .homebanner-slide button{
+    font-size: 14px;
+    font-size: min(17px,4vw);
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.568);
+    padding: 10px ;
+    background-color:rgba(255, 255, 255, 0.295);
+    border-radius: 10px;
+    color: white;
+    min-width: 70%;
+    left: 15%;
+    bottom: 10%;
+    padding: 3% 0;
+    z-index: 20;
+    backdrop-filter: blur(4px);
+  }
+
+  #slider_header_holder{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: left;
+  }
+  #slider_header_holder::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, transparent 50%, rgba(0, 0, 0, 0.6));
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+  #slider_header_holder p{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    font-size: 25px;
+    font-size: min(8.7vw,40px);
+    text-shadow: 0px 0px 10px black;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 20;
+    line-height: 45px;
+  }
+
+  #slider_header_holder button{
+    border: 0;
+      font-size: 14px;
+      font-size: min(17px,4.2vw);
+      font-weight: bold;
+      text-transform: uppercase;
+      background: #ffffff8a;
+      border-radius: 15px;
+      color: white;
+      width: -moz-fit-content;
+      width: fit-content;
+      padding: 10px;
+      z-index: 20;
+      margin-top: 10px;
+      text-shadow: 0 0 7px black;
+  }
+  #main-static-slider a:first-child{
+    grid-area: a;
+  }
+  #main-static-slider a:nth-child(2){
+    grid-area: b;
+  }
+  #main-static-slider a:nth-child(3){
+    grid-area: c;
+  }
+  #main-static-slider a:nth-child(4){
+    grid-area: d;
+  }
 
 }
 /* ---------------------------------------------------------- */
@@ -223,6 +399,33 @@ width: 100%;
 /* BEGIN Desktop CSS */
 /* ---------------------------------------------------------- */
 @media screen and (min-width:992px) {
+
+  #main-static-slider{
+    width: 100%;
+    padding: 1%;
+    display: grid;
+    justify-content: space-around;
+    grid-template-areas: 'a a b''a a c''a a d';
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  #big_homebanner-lowres img{
+    height:40vw;
+    max-height: 200px;
+    object-fit: cover;
+    position: relative;
+    display: block;
+  }
+
+  #big_homebanner-slide img{
+    max-height: 100%;
+    height:100%;
+    object-fit: cover;
+    position: relative;
+    display: block;
+  }
+
 }
 /* ---------------------------------------------------------- */
 /* END Mobile CSS */
