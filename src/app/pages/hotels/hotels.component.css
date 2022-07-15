@@ -36,12 +36,12 @@
   .hotel_card button {
     position: absolute;
     border: 0;
-    background: white;
-    box-shadow: 0px 0px 5px 1px #00000059;
+    background: black;
     padding: 10px;
-    border-radius: 10px;
-    bottom: 10px;
-    right: 10px;
+    border-radius: 0 0 10px 10px;
+    bottom: 0;
+    width: 100%;
+    color: white;
   }
 
 }
