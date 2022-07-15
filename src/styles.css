@@ -5,6 +5,14 @@
   margin: 0;
 }
 
+:root {
+  --darkblue: #01385F;
+  --blue: #0382AA;
+  --lightblue:#03BECA;
+  --sand:#F0E3D5;
+  --green:#304C1B;
+}
+
 body
 {
   font-family: 'Inter', sans-serif;
