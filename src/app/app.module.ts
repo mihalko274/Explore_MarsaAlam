@@ -9,7 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { HotelsComponent } from './pages/hotels/hotels.component';
 import { ReefsComponent } from './pages/reefs/reefs.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { IberotelConstaMaresComponent } from './pages/hotels/iberotel-consta-mares/iberotel-consta-mares.component';
+import { HotelpageComponent } from './pages/hotelpage/hotelpage.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { IberotelConstaMaresComponent } from './pages/hotels/iberotel-consta-mar
     HotelsComponent,
     ReefsComponent,
     ContactComponent,
-    IberotelConstaMaresComponent
+    HotelpageComponent,
   ],
   imports: [
     BrowserModule,
