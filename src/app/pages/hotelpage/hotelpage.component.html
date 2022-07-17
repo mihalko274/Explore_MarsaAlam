@@ -1,1 +1,16 @@
-<p>hotelpage works!</p>
+
+<div class="hotelpages-container" *ngIf="hotelData">
+  <div class="hotelpage_card">
+    <div class="hotelpage_card_img">
+      <img src="{{hotelData[0].hotelImg}}">
+    </div>
+    <div class="hotelpage_card_text">
+      <div class="hotelpage_name">{{hotelData[0].hotelName}}</div>
+      <div class="hotelpage_desc">{{hotelData[0].hotelDescription}}</div>
+    </div>
+    <a [routerLink]="['/hotels']">
+      <button>Späť</button>
+    </a>
+  </div>
+</div>
+

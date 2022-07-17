@@ -1,63 +1,16 @@
-<div class="hotels-container" *ngFor="let hD of hotelData">
+<div class="hotels-container" >
 
-  <div class="hotel_card">
-    <div class="sticker_tip">NÁŠ TIP</div>
+  <div class="hotel_card" *ngFor="let hData of hotelData">
     <div class="hotel_card_img">
-    <img src="{{hD.hotelImg}}">
-  </div>
-  <div class="hotel_card_text">
-    <div class="hotel_name">{{hD.hotelName}}</div>
-    <div class="hotel_desc">{{hD.hotelDescription}}</div>
-
-  </div>
-  <a [routerLink]="['/hotels', hD.id]"><button>Prezrieť</button></a>
-
-  </div>
-
-<!--<div class="hotel_card">
-    <div class="hotel_card_img">
-      <img src="{{hotelData[1].hotelImg}}">
+      <img src="{{hData.hotelImg}}">
     </div>
     <div class="hotel_card_text">
-      <div class="hotel_name">{{hotelData[1].hotelName}}</div>
-      <div class="hotel_desc">{{hotelData[1].hotelDescription}}</div>
+      <div class="hotel_name">{{hData.hotelName}}</div>
+      <div class="hotel_desc">{{hData.hotelDescription}}</div>
     </div>
-    <a href="">
-      <button>Preskúmať</button>
+    <a [routerLink]="['/hotels', hData.id]">
+      <button>Prezrieť</button>
     </a>
   </div>
 
-  <div class="hotel_card">
-    <div class="hotel_card_img">
-    <img src="{{hotelData[2].hotelImg}}">
-  </div>
-  <div class="hotel_card_text">
-    <div class="hotel_name">{{hotelData[2].hotelName}}</div>
-    <div class="hotel_desc">{{hotelData[2].hotelDescription}}</div>
-  </div>
-  <a href="">
-    <button>Preskúmať</button>
-  </a>
-  </div>
-
-  <div class="hotel_card">
-    <div class="hotel_card_img">
-    <img src="{{hotelData[3].hotelImg}}">
-  </div>
-  <div class="hotel_card_text">
-    <div class="hotel_name">{{hotelData[3].hotelName}}</div>
-    <div class="hotel_desc">{{hotelData[3].hotelDescription}}</div>
-  </div>
-  <a href="">
-  <button>Preskúmať</button>
-</a>
-</div>-->
-
-
-
-
-
-
-
-
-  </div>
+</div>

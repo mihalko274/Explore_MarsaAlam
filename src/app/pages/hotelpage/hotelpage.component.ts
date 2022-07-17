@@ -10,18 +10,16 @@ import { OrderDetailsService } from 'src/app/services/order-details.service';
 export class HotelpageComponent implements OnInit {
 
   constructor(private param:ActivatedRoute, private service:OrderDetailsService) {}
-  getHotelsId:any;
-  hotelsData:any;
+  getHotelId:any;
+  hotelData:any;
 
   ngOnInit(): void {
-    this.getHotelsId = this.param.snapshot.paramMap.get('id');
-    console.log(this.getHotelsId,'gethotelsId');
-    if(this.getHotelsId)
+    this.getHotelId = this.param.snapshot.paramMap.get('id');
+    if(this.getHotelId)
     {
-      this.hotelsData = this.service.hotelDetails.filter((value)=>{
-        return value.id == this.getHotelsId;
+      this.hotelData = this.service.hotelDetails.filter((value)=>{
+        return value.id == this.getHotelId;
       });
-      console.log(this.hotelsData,'hotelsdata>>');
     }
   }
 
