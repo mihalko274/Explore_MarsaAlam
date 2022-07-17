@@ -1,22 +1,21 @@
-<div class="hotels-container">
+<div class="hotels-container" *ngFor="let hd of hotelData">
 
   <div class="hotel_card">
     <div class="sticker_tip">NÁŠ TIP</div>
     <div class="hotel_card_img">
-    <img src="{{hotelData[0].hotelImg}}">
+    <img src="{{hd.hotelImg}}">
   </div>
   <div class="hotel_card_text">
-    <div class="hotel_name">{{hotelData[0].hotelName}}</div>
-    <div class="hotel_desc">{{hotelData[0].hotelDescription}}</div>
+    <div class="hotel_name">{{hotelData.hotelName}}</div>
+    <div class="hotel_desc">{{hotelData.hotelDescription}}</div>
 
   </div>
-  <a href="">
-    <button>Preskúmať</button>
-  </a>
+  <button [routerLink]="['/hotels', hd.id]">zobrazit<i class="bi bi-bag-heart-fill"></i>
+  </button>
 
   </div>
 
-  <div class="hotel_card">
+<!--<div class="hotel_card">
     <div class="hotel_card_img">
       <img src="{{hotelData[1].hotelImg}}">
     </div>
@@ -53,7 +52,7 @@
   <a href="">
   <button>Preskúmať</button>
 </a>
-</div>
+</div>-->
 
 
 

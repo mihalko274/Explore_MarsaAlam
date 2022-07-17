@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { HotelsComponent } from './pages/hotels/hotels.component';
 import { ReefsComponent } from './pages/reefs/reefs.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { IberotelConstaMaresComponent } from './pages/hotels/iberotel-consta-mares/iberotel-consta-mares.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     HomeComponent,
     HotelsComponent,
     ReefsComponent,
-    ContactComponent
+    ContactComponent,
+    IberotelConstaMaresComponent
   ],
   imports: [
     BrowserModule,
