@@ -21,6 +21,8 @@ export class HotelpageComponent implements OnInit {
         return value.id == this.getHotelId;
       });
     }
+
+
   }
 
 }
