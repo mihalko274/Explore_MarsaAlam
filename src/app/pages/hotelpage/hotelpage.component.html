@@ -1,121 +1,34 @@
 
-<style>
+<h2 style="text-align:center">{{hotelData[0].hotelName}}</h2>
 
-/* Position the image slideshow-container (needed to position the left and right arrows) */
-.slideshow-container {
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* slideshow-container for image text */
-.caption-slideshow-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-</style>
-
-<h2 style="text-align:center">Slideshow Gallery</h2>
-
-<div class="slideshow-container">
+<div class="slideshow-container" *ngIf="hotelData">
   <div class="mySlides" style="display: block;">
     <div class="numbertext">1 / 6</div>
-    <img src="http://localhost:4200/assets/hotels_files/iberotel_costa_mares/title_photo.jpg" style="width:100%">
+    <img src="{{hotelData[0].hotelImg}}" style="width:100%">
   </div>
-
   <div class="mySlides">
     <div class="numbertext">2 / 6</div>
-    <img src="http://localhost:4200/assets/hotels_files/iberotel_costa_mares/reception.jpg" style="width:100%">
+    <img src="{{hotelData[0].hotelImg_1}}" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">3 / 6</div>
-    <img src="http://localhost:4200/assets/hotels_files/iberotel_costa_mares/pool.jpg" style="width:100%">
+    <img src="{{hotelData[0].hotelImg2}}" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">4 / 6</div>
-    <img src="http://localhost:4200/assets/hotels_files/iberotel_costa_mares/pool_view.jpg" style="width:100%">
+    <img src="{{hotelData[0].hotelImg3}}" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">5 / 6</div>
-    <img src="http://localhost:4200/assets/hotels_files/iberotel_costa_mares/room_suite.jpg" style="width:100%">
+    <img src="{{hotelData[0].hotelImg4}}" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">6 / 6</div>
-    <img src="http://localhost:4200/assets/hotels_files/iberotel_costa_mares/reception_bar.jpg" style="width:100%">
+    <img src="{{hotelData[0].hotelImg5}}" style="width:100%">
   </div>
 
   <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -127,22 +40,22 @@
 
   <div class="row">
     <div class="column">
-      <img class="demo cursor" src="http://localhost:4200/assets/hotels_files/iberotel_costa_mares/title_photo.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      <img class="demo cursor" src="{{hotelData[0].hotelImg}}" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
     </div>
     <div class="column">
-      <img class="demo cursor" src="http://localhost:4200/assets/hotels_files/iberotel_costa_mares/reception.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      <img class="demo cursor" src="{{hotelData[0].hotelImg_1}}" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
     </div>
     <div class="column">
-      <img class="demo cursor" src="http://localhost:4200/assets/hotels_files/iberotel_costa_mares/pool.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      <img class="demo cursor" src="{{hotelData[0].hotelImg2}}" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
     </div>
     <div class="column">
-      <img class="demo cursor" src="http://localhost:4200/assets/hotels_files/iberotel_costa_mares/pool_view.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      <img class="demo cursor" src="{{hotelData[0].hotelImg3}}" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
     </div>
     <div class="column">
-      <img class="demo cursor" src="http://localhost:4200/assets/hotels_files/iberotel_costa_mares/room_suite.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      <img class="demo cursor" src="{{hotelData[0].hotelImg4}}" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
     </div>
     <div class="column">
-      <img class="demo cursor" src="http://localhost:4200/assets/hotels_files/iberotel_costa_mares/reception_bar.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      <img class="demo cursor" src="{{hotelData[0].hotelImg5}}" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
     </div>
   </div>
 </div>

@@ -3,10 +3,10 @@ import { ActivatedRoute } from '@angular/router';
 import { OrderDetailsService } from 'src/app/services/order-details.service';
 
 // added javascript function src/assets/js/scripts.js
-declare var slideIndex: any;
+/*declare var slideIndex: any;
 declare var plusSlides: any;
 declare var currentSlide: any;
-declare var showSlides: any;
+declare var showSlides: any;*/
 
 @Component({
   selector: 'app-hotelpage',
@@ -28,11 +28,11 @@ export class HotelpageComponent implements OnInit {
       });
     }
     // added javascript function src/assets/js/scripts.js
-    new slideIndex();
+   /* new slideIndex();
     new plusSlides();
     new currentSlide();
-    new showSlides();
+    new showSlides();*/
 
   }
-  title = 'app-js';
+  //title = 'app-js';
 }
