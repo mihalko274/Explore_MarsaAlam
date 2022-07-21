@@ -25,7 +25,12 @@ export class OrderDetailsService {
     id:"2",
     hotelName:"Royal Tulip Resort",
     hotelDescription:"Perfektne vyvážený rezort spojený s Magic Tulip Resortom. Priestranné rodinné izby, detský klub a široká piesočná pláž zaručí príjemnú dovolenku pre mladých aj starších. Útes Bay ponúka úchvatný podmorský svet a ďalšou unikátnou vlastnosťou je východ slnka, ktorý si môžete vychutnať ako pár na móle.",
-    hotelImg:"/assets/hotels_files/royal_tulip_resort/royal_tulip_resort_pool_view.jpg",
+    hotelImg:"/assets/hotels_files/royal_tulip_resort/pool_view.JPEG",
+    hotelImg_1:"/assets/hotels_files/royal_tulip_resort/garden.JPEG",
+    hotelImg2:"/assets/hotels_files/royal_tulip_resort/sea_view_2.JPEG",
+    hotelImg3:"/assets/hotels_files/royal_tulip_resort/sunrise.JPEG",
+    hotelImg4:"/assets/hotels_files/royal_tulip_resort/sea_view.JPEG",
+    hotelImg5:"/assets/hotels_files/royal_tulip_resort/room_view.JPEG",
    },
 
   {
