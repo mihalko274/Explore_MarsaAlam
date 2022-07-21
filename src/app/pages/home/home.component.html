@@ -1,7 +1,7 @@
-
+<div class="homepage-container">
 <div id="main-static-slider">
 
-    <a [routerLink]="['/hotels', hotelData[0].id]" id="big_homebanner-slide">
+    <a [routerLink]="['/hotels', hotelData[0].hotelName]" id="big_homebanner-slide">
         <img src="{{hotelData[0].hotelImg}}"  alt="">
         <div id="slider_header_holder">
             <p>{{hotelData[0].hotelName}}</p>
@@ -9,19 +9,19 @@
         </div>
     </a>
 
-    <a [routerLink]="['/hotels', hotelData[1].id]" id="big_homebanner-lowres"class="homebanner-slide">
+    <a [routerLink]="['/hotels', hotelData[1].hotelName]" id="big_homebanner-lowres"class="homebanner-slide">
         <img src="{{hotelData[1].hotelImg}}" alt="">
         <p class="homebanner-name">{{hotelData[1].hotelName}}</p>
         <p class="homebanner-desc">{{hotelData[1].hotelDescription}}</p>
     </a>
 
-    <a [routerLink]="['/hotels', hotelData[2].id]" class="homebanner-slide">
+    <a [routerLink]="['/hotels', hotelData[2].hotelName]" class="homebanner-slide">
         <img src="{{hotelData[2].hotelImg}}"  alt="">
         <p class="homebanner-name">{{hotelData[2].hotelName}}</p>
         <p class="homebanner-desc">{{hotelData[2].hotelDescription}}</p>
     </a>
 
-    <a [routerLink]="['/hotels', hotelData[3].id]" class="homebanner-slide">
+    <a [routerLink]="['/hotels', hotelData[3].hotelName]" class="homebanner-slide">
         <img src="{{hotelData[3].hotelImg}}"  alt="">
         <p class="homebanner-name">{{hotelData[3].hotelName}}</p>
         <p class="homebanner-desc">{{hotelData[3].hotelDescription}}</p>
@@ -30,3 +30,4 @@
 
 </div>
 
+</div>

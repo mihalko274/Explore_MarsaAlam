@@ -9,7 +9,7 @@ import { ReefsComponent } from './pages/reefs/reefs.component';
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'hotels',component:HotelsComponent},
-  {path:'hotels/:id',component:HotelpageComponent},
+  {path:'hotels/:hotelName',component:HotelpageComponent},
   {path:'reefs',component:ReefsComponent},
   {path:'contact',component:ContactComponent}
 ];

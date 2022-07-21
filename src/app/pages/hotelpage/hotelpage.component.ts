@@ -18,15 +18,15 @@ SwiperCore.use([FreeMode, Navigation, Thumbs]);
 export class HotelpageComponent implements OnInit {
 
   constructor(private param:ActivatedRoute, private service:OrderDetailsService) {}
-  getHotelId:any;
+  getHotelName:any;
   hotelData:any;
 
   ngOnInit(): void {
-    this.getHotelId = this.param.snapshot.paramMap.get('id');
-    if(this.getHotelId)
+    this.getHotelName = this.param.snapshot.paramMap.get('hotelName');
+    if(this.getHotelName)
     {
       this.hotelData = this.service.hotelDetails.filter((value)=>{
-        return value.id == this.getHotelId;
+        return value.hotelName == this.getHotelName;
       });
     }
   }

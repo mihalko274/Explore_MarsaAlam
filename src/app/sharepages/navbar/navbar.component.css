@@ -4,8 +4,7 @@
 
   .navbar {
     background: white;
-    box-shadow: 0 0 6px 3px #0000001a;
-    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 6px 3px #0000000a;
   }
 
   .navbar-brand {
@@ -59,8 +58,7 @@
 
   .navbar {
     background: white;
-    box-shadow: 0 0 6px 3px #0000001a;
-    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 6px 3px #0000000a;
   }
 
   .navbar-brand {
@@ -126,11 +124,16 @@
 
 
   .navbar {
-    background: white;
-    box-shadow: 0 0 6px 3px #0000001a;
-    border-radius: 0 0 20px 20px;
-  }
 
+    background: white;
+    box-shadow: 0 0 6px 3px #0000000a;
+  }
+  .navbar>.container-fluid{
+
+
+    margin: 0 auto;
+    max-width: 1000px;
+  }
   .navbar-nav {
     padding: 5px;
     border-radius: 20px;

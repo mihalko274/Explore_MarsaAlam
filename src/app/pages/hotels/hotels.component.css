@@ -181,6 +181,11 @@
 /* ---------------------------------------------------------- */
 @media screen and (min-width:992px) {
 
+  .hotels-container{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
   .hotel_card img {
     height: 400px;
     float: left;
