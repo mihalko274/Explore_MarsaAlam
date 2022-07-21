@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
+import { SwiperModule } from 'swiper/angular';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,9 @@ import { HotelsComponent } from './pages/hotels/hotels.component';
 import { ReefsComponent } from './pages/reefs/reefs.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HotelpageComponent } from './pages/hotelpage/hotelpage.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -25,7 +29,8 @@ import { HotelpageComponent } from './pages/hotelpage/hotelpage.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
