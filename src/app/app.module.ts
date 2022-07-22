@@ -10,6 +10,9 @@ import { HotelsComponent } from './pages/hotels/hotels.component';
 import { ReefsComponent } from './pages/reefs/reefs.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HotelpageComponent } from './pages/hotelpage/hotelpage.component';
+import { LoginComponent } from './components/login/login.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 
@@ -22,7 +25,10 @@ import { HotelpageComponent } from './pages/hotelpage/hotelpage.component';
     HotelsComponent,
     ReefsComponent,
     ContactComponent,
-    HotelpageComponent
+    HotelpageComponent,
+    LoginComponent,
+    ForgotPasswordComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
