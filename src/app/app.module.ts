@@ -10,11 +10,6 @@ import { HotelsComponent } from './pages/hotels/hotels.component';
 import { ReefsComponent } from './pages/reefs/reefs.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HotelpageComponent } from './pages/hotelpage/hotelpage.component';
-import { LoginComponent } from './components/login/login.component';
-import { NotFoundComponent } from './components/not-found/not-found.component';
-import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
-import { AdminDashboardComponent } from './modules/admin/components/admin-dashboard/admin-dashboard.component';
-//import { HeaderComponent } from './modules/admin/components/header/header.component';
 
 
 
@@ -27,12 +22,7 @@ import { AdminDashboardComponent } from './modules/admin/components/admin-dashbo
     HotelsComponent,
     ReefsComponent,
     ContactComponent,
-    HotelpageComponent,
-    LoginComponent,
-    NotFoundComponent,
-    ForgotPasswordComponent,
-    AdminDashboardComponent,
- //   HeaderComponent,
+    HotelpageComponent
   ],
   imports: [
     BrowserModule,
