@@ -8,6 +8,8 @@ import { OrderDetailsService } from 'src/app/services/order-details.service';
 })
 export class HotelsComponent implements OnInit {
 
+
+
   constructor(private service:OrderDetailsService) { }
   hotelData:any;
   ngOnInit(): void {

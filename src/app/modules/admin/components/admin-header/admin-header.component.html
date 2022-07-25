@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg" float="">
   <div class="container-fluid">
       <a class="navbar-brand" href="/admin/home">Administrácia</a>
-    <div id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+    <div class="collapsed">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" routerLink="./home" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home
         </a>
@@ -17,7 +17,7 @@
           <a class="nav-link" routerLink="./contact" routerLinkActive="active-link">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" (click)="logout()">logout</a>
+          <a class="nav-link text-white" (click)="logout()">Logout</a>
         </li>
       </ul>
     </div>
