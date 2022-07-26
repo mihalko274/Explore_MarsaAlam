@@ -1,6 +1,11 @@
 <div id="main">
+  <li *ngFor="let user of userArray">
+    {{user | json}}
+ </li>
 
-  <app-navbar></app-navbar>
+ <p> {{ userArray[0].name }}</p>
+
+  <app-navbar> </app-navbar>
 
   <router-outlet></router-outlet>
 

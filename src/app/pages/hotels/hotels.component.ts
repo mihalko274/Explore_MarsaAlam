@@ -7,6 +7,9 @@ import { DatafeedHotelsService } from 'src/app/services/datafeed-hotels.service'
   templateUrl: './hotels.component.html',
   styleUrls: ['./hotels.component.css']
 })
+
+
+
 export class HotelsComponent implements OnInit {
 
 
