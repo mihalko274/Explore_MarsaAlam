@@ -30,7 +30,7 @@ import { HttpClientModule } from '@angular/common/http'
     HotelpageComponent,
     LoginComponent,
     ForgotPasswordComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
